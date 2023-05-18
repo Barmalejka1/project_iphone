@@ -1,0 +1,194 @@
+@import "_nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap");
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0px 30px;
+  border: 1px solid red;
+}
+
+.wrapper {
+  font-family: "Montserrat";
+  font-weight: 300;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "products"
+    "gallery__top"
+    "size-grid__top"
+    "materials"
+    "economy"
+    "gallery__bottom"
+    "footer";
+}
+.header {
+  grid-area: header;
+  background-image: url(/image/DSC01745\ 1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 120vh;
+  padding: 100px 0px 0px 0px;
+  &__container {
+  }
+
+  &__inner {
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 49px;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ececec;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0px 0px 100px 0px;
+  }
+
+  &__btn {
+    text-align: center;
+    border-radius: 25px;
+    max-width: 238px;
+    &_oz {
+      background: #ffffff;
+      border: 2px solid #2400ff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      padding: 22px 0px;
+    }
+
+    &_wb {
+      background: #ffffff;
+      border: 2px solid #8a00bb;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      padding: 22px 0px;
+    }
+  }
+}
+.container {
+}
+.button-block {
+  display: grid;
+  gap: 20px;
+}
+.btn {
+}
+.products {
+  grid-area: products;
+  &__container {
+  }
+
+  &__inner {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__img {
+  }
+
+  &__title {
+  }
+
+  &__descr {
+  }
+}
+.gallery {
+  &__top {
+    grid-area: gallery__top;
+  }
+
+  &__container {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__bottom {
+    grid-area: gallery__bottom;
+  }
+}
+.size-grid {
+  grid-area: size-grid__top;
+  &__container {
+  }
+
+  &__inner {
+  }
+
+  &__title {
+  }
+
+  &__table {
+  }
+
+  &__consult {
+  }
+}
+.materials {
+  grid-area: materials;
+
+  &__container {
+  }
+
+  &__inner {
+  }
+
+  &__top {
+  }
+
+  &__bottom {
+  }
+
+  &__title {
+  }
+}
+.materials-top {
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__img {
+  }
+}
+.block-text {
+}
+.block-title {
+}
+.economy {
+  grid-area: economy;
+  &__img {
+  }
+}
+.footer {
+  grid-area: footer;
+  &__container {
+  }
+
+  &__inner {
+  }
+
+  &__info {
+  }
+
+  &__link {
+  }
+}
