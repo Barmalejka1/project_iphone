@@ -1,8 +1,8 @@
 @import "_nullstyle";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-.header {
-  background-color: #0a0a0a;
+.header,
+.footer {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -10,43 +10,256 @@
   line-height: 29px;
   padding: 30px 0px;
 }
+
+.footer {
+  font-size: 14px;
+}
 .title {
   text-transform: uppercase;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
 }
-.footer {
+.footer,
+.header {
   background-color: #0a0a0a;
 }
 .container {
   margin: 0 auto;
   max-width: 1230px;
-  border: 1px solid red;
   padding: 0px 15px;
 }
-.header__nav {
+.header__nav,
+.footer__nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 }
 
-.header__logo {
+.header__logo,
+.footer__logo {
   margin: auto;
 }
-.header__nav-list {
+.header__nav-list,
+.footer__nav-list {
   display: grid;
   color: #717171;
   grid-template-columns: repeat(3, auto);
   column-gap: 30px;
   align-items: center;
 }
-.header a {
+.footer__nav-list {
+  display: grid;
+  color: #717171;
+  grid-template-columns: repeat(1, auto);
+  column-gap: 30px;
+  align-items: center;
+}
+.header a,
+.footer a {
   color: #717171;
 }
-.header__phone {
+.header__phone,
+.footer__phone {
   text-align: end;
 }
-.first-section{
-    background-color: #F5F5F7;
+.first-section {
+  background-color: #f5f5f7;
+}
+.btn {
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+}
+.first-section {
+  padding: 70px 0px 40px 0px;
+  &__btn {
+    padding: 22px;
+    max-width: 350px;
+    width: 100%;
+    background-color: #490e84;
+    color: white;
+
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+.first-section__inner {
+  display: grid;
+  justify-items: center;
+}
+
+.first-section__title {
+  color: #490e84;
+  font-size: 64px;
+  line-height: 77px;
+}
+.title {
+}
+.first-section__img {
+  padding: 40px 0px 25px 0px;
+  img {
+    object-fit: cover;
+  }
+}
+.section__title {
+  color: #717171;
+  text-align: center;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 50px;
+}
+
+////-------New-------------//////////
+.new {
+  padding: 87px 0px 100px 0px;
+  background-color: white;
+  // .new__inner
+
+  &__inner {
+  }
+
+  &__title {
+    color: #717171;
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  &__text {
+    display: grid;
+    gap: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    p {
+      max-width: 489px;
+      text-align: left;
+    }
+    span {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+    }
+  }
+
+  &__img {
+    display: grid;
+    margin: auto;
+  }
+}
+//------------------Color-----------------//
+.color {
+  padding: 50px 0px 150px 0px;
+  &__inner {
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    grid-auto-flow: dense;
+  }
+
+  &__item {
+    text-align: center;
+    max-width: 240px;
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+      color: #0a0a0a;
+    }
+    p span {
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 20px;
+    img {
+      object-fit: cover;
+    }
+  }
+}
+.container {
+}
+.section {
+  &__title {
+  }
+}
+.title {
+}
+
+////-------Hero-------------//////////
+.form {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    background-color: #574b63;
+  }
+
+  &__body {
+    display: grid;
+    color: rgba($color: #ffffff, $alpha: 0.5);
+    justify-items: start;
+    align-items: center;
+    padding: 137px 0px;
+    max-width: 413px;
+    width: 100%;
+    margin: auto;
+    gap: 40px;
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 39px;
+    color: #ffffff;
+  }
+
+  &__item {
+    border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+    width: 100%;
+    input {
+      background-color: inherit;
+      color: white;
+    }
+  }
+
+  &__label {
+  }
+
+  &__input {
+  }
+
+  &__button {
+    padding: 16px;
+    max-width: 240px;
+    width: 100%;
+  }
+
+  &__img {
+    img {
+      object-fit: cover;
+    }
+  }
+}
+.container {
+}
+.title {
+}
+.btn {
 }
